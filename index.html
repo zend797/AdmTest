@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fff"/>
+    <meta name="Description" content="History articles">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/custom-checkbox.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ADM test-task</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="grid">
+      <div class="bg-image"></div>
+      <div class="content-wrap">
+        <img src="assets/logo_02.png" alt="Logo" />
+
+        <div class="logo" id="main-logo"><img src="assets/logo_01.png" alt="Main logo" /></div>
+        <div class="header-paragraph">
+          <p>
+            Vali nende põnevate lugude seast välja enda lemmikud. Sinu ja teiste lugejate soovide põhjal paneme kokku
+            ajakirja novembri numbri. Nii sünnib Eesti esimene lugejate poolt kokku pandud ajakiri, mille Sina võid
+            saada endale tasuta!
+          </p>
+        </div>
+        <div id="favorite-chooser">
+          <i class="fas fa-arrow-down"></i> <a>Vali oma lemmikartiklid</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Area -->
+    <main id="main">
+      <section id="section-a" class="grid">
+        <div class="content-wrap">
+          <div class="section-a-paragraph">
+            <h3 class="content-title">Pane kokku omaenda Imeline Ajalugu</h3>
+            <p>
+              Vali igast teemast kuni 3 artiklit Imelise Ajaloo novembri numbrisse. Tänutäheks saadame selle Sulle
+              tasuta. Kui Sul endal on ajakiri juba tellitud, telli tasuta number heale sõbrale, kolleegile või
+              sugulasele.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="section-b" class="grid">
+        <div class="content-wrap">
+          <div class="accordion-item closed" id="a-item-1">
+            <div class="accordion-item-heading">
+              <h4>Pingelised sündmused</h4>
+              <span id="a-item-1-counter" class="counter">0 / 3</span>
+            </div>
+            <div class="accordion-item-content">
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-1-check1" value="option" />
+                <label for="a-item-1-check1"></label>
+                <img src="./assets/images/post_image_07.jpg" alt="Aaretejaht" />
+                <div class="accordion-paragraph">
+                  <h5>Aaretejaht</h5>
+                  <p>
+                    1820: Hispaanlased lastivad laeva aaretega, kuid see röövitakse ja aare peidetakse väikesele
+                    saarele. Tänapäeva aaretejahtija läheb seda otsima.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-1-check2" value="option" />
+                <label for="a-item-1-check2"></label> <img src="./assets/images/post_image_10.jpg" alt="Purustav orkaan" />
+                <div class="accordion-paragraph">
+                  <h5>Purustav orkaan</h5>
+                  <p>
+                    1900: Orkaan purustab Galvestoni linna. Katastroofis hukkub 8000 inimest ning see USA linn kaotab
+                    igaveseks oma jõukuse ja sära.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-1-check3" value="option" />
+                <label for="a-item-1-check3"></label> <img src="./assets/images/post_image_12.jpg" alt="Hirmsaim lennukatastroof" />
+                <div class="accordion-paragraph">
+                  <h5>Hirmsaim lennukatastroof</h5>
+                  <p>
+                    1977: Gran Canaria lennuväljal plahvatanud pommi tõttu suunatakse paljud lennud Tenerifele. Tekkinud
+                    segaduses juhtub ajaloo suurim lennuõnnetus
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-1-check-4" value="option" />
+                <label for="a-item-1-check-4"></label>
+                <!-- <label class="text" for="1">
+                      Checkbox
+                    </label> -->
+                <img src="./assets/images/post_image_14.jpg" alt="Samuraide kättemaks" />
+                <div class="accordion-paragraph">
+                  <h5>Samuraide kättemaks</h5>
+                  <p>1703: Noor mees sunnitakse enesetapule ning tema klanni samuraid peavad perekonna au taastama</p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-1-check-5" value="option" />
+                <label for="a-item-1-check-5"></label> <img src="./assets/images/post_image_16.jpg" alt="Project Azorian" />
+                <div class="accordion-paragraph">
+                  <h5>Project Azorian</h5>
+                  <p>
+                    1968: Ootamatult upub nõukogude allveelaev K-129 tuumarakettidega pardal. Mõne aasta pärast alustab
+                    CIA vaenlase allveelaeva koopia ehitamist - algab projekt Azorian.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-1-check-6" value="option" />
+                <label for="a-item-1-check-6"></label> <img src="./assets/images/post_image_18.jpg" alt="Viis ööpäeva põrgu" />
+                <div class="accordion-paragraph">
+                  <h5>Viis ööpäeva põrgu</h5>
+                  <p>
+                    1977: Palestiina terroristid kaaperdavad reisilennuki. Tund-tunnilt kustub reisijate lootus eluga
+                    pääseda. Lääne-Saksamaa saadab Somaaliasse teel olevale lennukile vastu eriüksuse.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-1-check-7" value="option" />
+                <label for="a-item-1-check-7"></label> <img src="./assets/images/post_image_21.jpg" alt="Tuumakatastroof Tšernobõli" />
+                <div class="accordion-paragraph">
+                  <h5>Tuumakatastroof Tšernobõli</h5>
+                  <p>
+                    1986: Suur osa Nõukogude Liidu elektrist tuleb tuumajaamadest, kuid nende ehitamisel on tehtud
+                    mitmeid vigu. 26. aprillil toimub Tšernobõli tuumajaamas plahvatus ning ajaloo suurim
+                    tuumakatastroof saab tõeks.
+                  </p>
+                </div>
+              </div>
+
+              <button class="btn next">Järgmine teema</button>
+            </div>
+          </div>
+
+          <div class="accordion-item closed" id="a-item-2">
+            <div class="accordion-item-heading">
+              <h4>Kuulsad teod</h4>
+              <span id="a-item-2-counter" class="counter">0 / 2</span>
+            </div>
+            <div class="accordion-item-content">
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-2-check-1" value="option" />
+                <label for="a-item-2-check-1"></label>
+                <img src="./assets/images/post_image_14.jpg" alt="Samuraide kättemaks" />
+                <div class="accordion-paragraph">
+                  <h5>Samuraide kättemaks</h5>
+                  <p>1703: Noor mees sunnitakse enesetapule ning tema klanni samuraid peavad perekonna au taastama</p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-2-check-2" value="option" />
+                <label for="a-item-2-check-2"></label> <img src="./assets/images/post_image_16.jpg" alt="Project Azorian" />
+                <div class="accordion-paragraph">
+                  <h5>Project Azorian</h5>
+                  <p>
+                    1968: Ootamatult upub nõukogude allveelaev K-129 tuumarakettidega pardal. Mõne aasta pärast alustab
+                    CIA vaenlase allveelaeva koopia ehitamist - algab projekt Azorian.
+                  </p>
+                </div>
+              </div>
+              <button class="btn next next">Järgmine teema</button>
+            </div>
+          </div>
+
+          <div class="accordion-item closed" id="a-item-3">
+            <div class="accordion-item-heading">
+              <h4>Igapäevane elu</h4>
+              <span id="a-item-3-counter" class="counter">0 / 3</span>
+            </div>
+            <div class="accordion-item-content">
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-3-check-1" value="option" />
+                <label for="a-item-3-check-1"></label>
+                <img src="./assets/images/post_image_21.jpg" alt="" />
+                <div class="accordion-paragraph">
+                  <h5>Lorem ipsum dolor sit amet.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, cupiditate. Nostrum dolore
+                    mollitia nemo accusantium reprehenderit, sit veniam iusto commodi!
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-3-check-2" value="option" />
+                <label for="a-item-3-check-2"></label> <img src="./assets/images/post_image_10.jpg" alt="" />
+                <div class="accordion-paragraph">
+                  <h5>Lorem ipsum dolor sit amet.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis obcaecati provident odit
+                    dolorum odio, rem quia ut laudantium numquam eum ex veritatis laborum nobis repudiandae corporis
+                    animi repellendus facilis.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-3-check-3" value="option" />
+                <label for="a-item-3-check-3"></label> <img src="./assets/images/post_image_10.jpg" alt="" />
+                <div class="accordion-paragraph">
+                  <h5>Lorem ipsum dolor sit amet.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis obcaecati provident odit
+                    dolorum odio, rem quia ut laudantium numquam eum ex veritatis laborum nobis repudiandae corporis
+                    animi repellendus facilis.
+                  </p>
+                </div>
+              </div>
+              <button class="btn next">Järgmine teema</button>
+            </div>
+          </div>
+
+          <div class="accordion-item closed" id="a-item-4">
+            <div class="accordion-item-heading">
+              <h4>Suured konfliktid</h4>
+              <span id="a-item-4-counter" class="counter">0 / 3</span>
+            </div>
+            <div class="accordion-item-content">
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-4-check-1" value="option" />
+                <label for="a-item-4-check-1"></label>
+                <img src="./assets/images/post_image_07.jpg" alt="" />
+                <div class="accordion-paragraph">
+                  <h5>Lorem ipsum dolor sit amet.</h5>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dolor? Qui, cupiditate! Ex
+                    consequatur fugit rerum harum eos veniam aspernatur?
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-4-check-2" value="option" />
+                <label for="a-item-4-check-2"></label> <img src="./assets/images/post_image_16.jpg" alt="" />
+                <div class="accordion-paragraph">
+                  <h5>Lorem ipsum dolor sit amet.</h5>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quod at veritatis laboriosam
+                    quaerat quos iure eos magnam pariatur fugit.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-row">
+                <input class="magic-checkbox" type="checkbox" name="layout" id="a-item-4-check-3" value="option" />
+                <label for="a-item-4-check-3"></label> <img src="./assets/images/post_image_16.jpg" alt="" />
+                <div class="accordion-paragraph">
+                  <h5>Lorem ipsum dolor sit amet.</h5>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quod at veritatis laboriosam
+                    quaerat quos iure eos magnam pariatur fugit.
+                  </p>
+                </div>
+              </div>
+              <button class="btn next">Järgmine teema</button>
+            </div>
+          </div>
+          <button class="btn-inactive" id="btn-ready">Valmis</button>
+        </div>
+      </section>
+      <section id="section-c" class="grid">
+        <div class="content-wrap">
+          <div class="section-c-paragraph">
+            <p>
+              <strong style="text-decoration: underline; color:#951c00;">Imeline Ajalugu</strong> on põhjamaade
+              populaarseim ajalooajakiri, millel on Eestis üle 50 000 lugeja. Ajakiri ilmub kord kuus, igas numbris on
+              põnevad ja rikkalikult illustreeritud lood ligi 100 leheküljel. Imelist Ajalugu annab Eestis välja AS
+              Äripäev alates 2011 aaasta sügisest.
+            </p>
+            <img src="./assets/images/covers_02.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <div id="modal-terms" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Kampaania tingimused</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa expedita autem quae consectetur beatae a
+            voluptatibus in itaque molestiae dolores. Dicta est libero natus in et, dolor excepturi facilis quae dolore
+            inventore similique reprehenderit nam tempora non obcaecati ipsum eaque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa expedita autem quae consectetur beatae a
+            voluptatibus in itaque molestiae dolores. Dicta est libero natus in et, dolor excepturi facilis quae dolore
+            inventore similique reprehenderit nam tempora non obcaecati ipsum eaque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quod, minima libero ipsa rem placeat earum
+            iusto quasi quo, magnam harum eos nulla sequi optio perspiciatis fugiat accusantium temporibus, iure ad?
+            Facere enim nostrum voluptatum eum, cumque doloribus cupiditate magni!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa expedita autem quae consectetur beatae a
+            voluptatibus in itaque molestiae dolores. Dicta est libero natus in et, dolor excepturi facilis quae dolore
+            inventore similique reprehenderit nam tempora non obcaecati ipsum eaque.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer id="main-footer" class="grid">
+      <div class="content-wrap">
+        <div id="terms-button"><a>Tutvu kampaania tingimustega</a></div>
+        <p>Klienditeeninduse e-post: <a href="#">register@imelineajalugu.ee</a>, tel: 667 0099 (tööpäeviti 9–17)</p>
+      </div>
+    </footer>
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

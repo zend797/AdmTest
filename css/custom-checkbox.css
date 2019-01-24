@@ -1,0 +1,125 @@
+@keyframes hover-color {
+  from {
+    border-color: #c0c0c0;
+  }
+  to {
+    border-color: #f9f0ba;
+    background: #fff6bf;
+  }
+}
+
+.magic-checkbox {
+  position: absolute;
+  display: none;
+}
+
+.magic-checkbox[disabled] {
+  cursor: not-allowed;
+}
+
+.magic-checkbox + label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.magic-checkbox + label:hover:before {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-name: hover-color;
+}
+
+.magic-checkbox + label:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: '';
+  border: 1px solid #bbbbbb;
+  background: #f7f7f7;
+}
+
+.magic-checkbox + label:after {
+  position: absolute;
+  display: none;
+  content: '';
+}
+
+.magic-checkbox[disabled] + label {
+  cursor: not-allowed;
+  color: #050505;
+}
+
+.magic-checkbox[disabled] + label:hover,
+.magic-checkbox[disabled] + label:before,
+.magic-checkbox[disabled] + label:after {
+  cursor: not-allowed;
+}
+
+.magic-checkbox[disabled] + label:hover:before {
+  border: 1px solid #663131;
+  animation-name: none;
+}
+
+.magic-checkbox[disabled] + label:before {
+  border-color: #e4e4e4;
+}
+
+.magic-checkbox:checked + label:before {
+  animation-name: none; }
+
+.magic-radio:checked + label:after,
+.magic-checkbox:checked + label:after {
+  display: block; }
+
+.magic-radio + label:before {
+  border-radius: 50%; }
+
+.magic-radio + label:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff6bf; }
+
+.magic-radio:checked + label:before {
+  border: 1px solid #fff6bf; }
+
+.magic-radio:checked[disabled] + label:before {
+  border: 1px solid #c9e2f9; }
+
+.magic-radio:checked[disabled] + label:after {
+  background: #c9e2f9; }
+
+.magic-checkbox + label:before {
+  border-radius: 3px;
+}
+
+.magic-checkbox + label:after {
+  top: 2px;
+  left: 7px;
+  box-sizing: border-box;
+  width: 6px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #4a3520;
+  border-top: 0;
+  border-left: 0;
+}
+
+.magic-checkbox:checked + label:before {
+  border: #f0ce00;
+  background: #fff6bf;
+}
+
+.magic-checkbox:checked[disabled] + label:before {
+  border: #c9e2f9;
+  background: #a11616;
+}
