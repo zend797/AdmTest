@@ -1,4 +1,15 @@
+import {modalFunction} from './modal';
+// require('../../css/custom-checkbox.css')
+// require('../../css/modal.css')
+// require('../../css/style.css')
+import '../../css/custom-checkbox.css';
+import '../../css/modal.css';
+import '../../css/style.css';
+import bg from '../../assets/bg2_01.jpg';
+
+modalFunction();
 (function() {
+
   /*  Scroll to element */
   function scroll() {
     let element = document.getElementById('section-a');

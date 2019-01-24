@@ -5,10 +5,10 @@
   src: url('../Design/diogene_bienetresocial/Bienetresocial.ttf');
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Bienetresocial-Bold';
   src: url('../Design/diogene_bienetresocial/Bienetresocial-Bold.ttf');
-}
+} */
 
 html,
 body {
@@ -148,7 +148,7 @@ i {
 
 header .bg-image {
   position: absolute;
-  background: rgb(86, 150, 120) url('../assets/bg2_01.jpg');
+  background: rgb(86, 150, 120) url('/dist/static/bg2_01.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
